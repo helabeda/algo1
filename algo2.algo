@@ -1,0 +1,41 @@
+ALGORITHM  DistinctElementsInTwoSets
+VAR
+  setOne : ARRAY_OF INTEGER[4];
+  setTwo : ARRAY_OF INTEGER[4];
+ 
+        sum,i,j: INTEGER;
+BEGIN
+
+ REPEAT
+     read(tab1[x])
+ UNTIL (x<=leng(tab1))
+
+REPEAT
+    read(tab2[y])
+UNTIL (y<= leng(tab2))
+ sum=0
+ s1=0
+ s2=0
+
+   FOR i FROM 0 TO leng(tab1) STEP 1  DO
+       FOR j FROM 0 TO leng(tab2) STEP 1  DO
+           IF (tab1[i] != tab2[j])) THEN
+               s1+=tab1[i]
+           END_IF
+       END_FOR
+   END_FOR
+
+ FOR j FROM 0 TO leng(tab2) STEP 1  DO
+     FOR i FROM 0 TO leng(tab1) STEP 1  DO
+     IF (tab2[j] != tab[i]) THEN
+         s2+=tab2[j]
+     END_IF
+
+
+ END_FOR
+ 
+ sum=s1+s2
+ write("la somme des element distinc" s)
+ 
+
+END
