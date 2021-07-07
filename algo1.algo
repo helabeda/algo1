@@ -1,0 +1,42 @@
+ALGORITHM algorithm_name
+VAR
+    var p:chaine="Hello world.";
+    i,j,k:INTEGER;
+    nbw:INTEGER=1;
+    nbvoy:INTEGER=0;
+
+BEGIN
+
+  while(p(p.leng-1)='.') do 
+    read(p);
+    
+ for i:=1 to length(p) do
+      begin
+      if(p[i]=" ") then    nbw=nbw+1;
+      end;
+    write("number of word",nbw);
+
+
+
+ for j:=1 to length(p) do
+     begin
+        switch p[j] do
+        case 'a':case '0':case :'e' case :'u' case:'y'  case 'A':case '0':case :'E' case :'U' case:'Y'
+
+          nbvoy=nbvoy+1;
+     end;
+
+  write("number of vowel ",nbvoy);
+ 
+
+
+  for k:=1 to length(chaine) do
+     begin
+         if ((p[k]=' ') and (STRING[i+1]))  then      p[k]:= chaine[k+1];
+
+     end;
+
+ write(" length of STRING ",long(p));
+
+
+END
